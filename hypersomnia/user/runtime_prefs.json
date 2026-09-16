@@ -1,0 +1,13 @@
+
+/*
+    This file will be OVERWRITTEN the next time Hypersomnia quits.
+    Put your persistent settings in the conf.d/ directory!
+
+    These are the settings changed at RUNTIME,
+    e.g. through Server RCON or Settings in Main Menu.
+*/
+{
+    "client": {
+        "nickname": "codespace"
+    }
+}

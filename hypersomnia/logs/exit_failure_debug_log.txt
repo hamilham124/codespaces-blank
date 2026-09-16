@@ -1,0 +1,50 @@
+Version 0.0.0
+Started at 12:47:20 on 15.09.26
+Executable called from directory: "/workspaces/codespaces-blank/Hypersomnia/hypersomnia"
+Chosen working directory: "/workspaces/codespaces-blank/Hypersomnia/hypersomnia"
+If the game crashes repeatedly, consider deleting the "cache" folder.
+
+Complete command line:
+/workspaces/codespaces-blank/Hypersomnia/build/RelWithDebInfo-x64-clang/Hypersomnia
+Parsed as:
+
+App data directory: "" (Default)
+Removing steam_appid.txt
+(is_steam_client=0)
+Creating directories:
+cache
+user
+user/demos
+user/conf.d
+user/downloads/arenas
+user/projects
+Loading default_config.json.
+Loaded all user configs.
+[12:47:20] Performing 5000 floating point consistency passes.
+[12:47:20] (FP consistency test) Representations match. Achieved value: -4.40822
+[12:47:20] (FP consistency test) Passed the test. Canonical result matches the actual results.
+[12:47:20] (nans=622)
+[12:47:20] (FP consistency test) Time taken: 2.82789 ms
+[12:47:20] Initializing network RAII.
+[12:47:20] Initializing the network library.
+[12:47:20] Running unit tests.
+[12:47:20] (*std::get_if<augs::path_type>(&r)=a.png)
+[12:47:20] All unit tests have passed.
+[12:47:20] Initializing ImGui.
+[12:47:20] Skipping update check due to update_on_launch = false.
+[12:47:20] Initializing freetype
+[12:47:20] Calling FT_Init_FreeType
+[12:47:20] netcode_socket_raii ctor
+[12:47:20] Successfully bound the nat detection socket to the preferred server port: 8412.
+[12:47:20] (get_bound_local_port()=8412)
+[12:47:20] ---- BEGIN NAT ANALYSIS ----
+[12:47:21] Reinferring all entities at step: 0
+[12:47:21] Initializing the audio context.
+[12:47:21] (custom_hrtf_path=/workspaces/codespaces-blank/Hypersomnia/hypersomnia/detail/hrtf)
+[12:47:21] Device sample rate: 0
+[12:47:21] netcode_socket_raii dtor
+[12:47:21] Shutting down the network library.
+[12:47:21] Failed to establish the audio context:
+Failed to set an OpenAL context on device: 
+[12:47:21] (completed_work_result=2)
+[12:47:21] Failure.

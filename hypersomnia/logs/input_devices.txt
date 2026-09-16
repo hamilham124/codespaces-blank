@@ -1,0 +1,75 @@
+Device info start.
+'Virtual core pointer' (2)
+ - is a master pointer
+ - current pairing/attachment: 3
+		Class originated from: 2
+		Buttons supported: 10
+		Button labels: 'Button Left' 'Button Middle' 'Button Right' 'Button Wheel Up' 'Button Wheel Down' 'Button Horiz Wheel Left' 'Button Horiz Wheel Right' 'None' 'None' 'None'
+		Button state:
+		Class originated from: 2
+		Detail for Valuator 0:
+		  Label: 'Rel X'
+		  Range: -1 - -1
+		  Resolution: 0 units/m
+		  Mode: relative
+		Class originated from: 2
+		Detail for Valuator 1:
+		  Label: 'Rel Y'
+		  Range: -1 - -1
+		  Resolution: 0 units/m
+		  Mode: relative
+'Virtual core keyboard' (3)
+ - is a master keyboard
+ - current pairing/attachment: 2
+		Class originated from: 3
+		Keycodes supported: 248
+'Virtual core XTEST pointer' (4)
+ - is a slave pointer
+ - current pairing/attachment: 2
+		Class originated from: 4
+		Buttons supported: 10
+		Button labels: 'Button Left' 'Button Middle' 'Button Right' 'Button Wheel Up' 'Button Wheel Down' 'Button Horiz Wheel Left' 'Button Horiz Wheel Right' 'None' 'None' 'None'
+		Button state:
+		Class originated from: 4
+		Detail for Valuator 0:
+		  Label: 'Rel X'
+		  Range: -1 - -1
+		  Resolution: 0 units/m
+		  Mode: relative
+		Class originated from: 4
+		Detail for Valuator 1:
+		  Label: 'Rel Y'
+		  Range: -1 - -1
+		  Resolution: 0 units/m
+		  Mode: relative
+'Virtual core XTEST keyboard' (5)
+ - is a slave keyboard
+ - current pairing/attachment: 3
+		Class originated from: 5
+		Keycodes supported: 248
+'Xvfb mouse' (6)
+ - is a slave pointer
+ - current pairing/attachment: 2
+		Class originated from: 6
+		Buttons supported: 3
+		Button labels: 'Button Left' 'Button Middle' 'Button Right'
+		Button state:
+		Class originated from: 6
+		Detail for Valuator 0:
+		  Label: 'Rel X'
+		  Range: -1 - -1
+		  Resolution: 0 units/m
+		  Mode: relative
+		Class originated from: 6
+		Detail for Valuator 1:
+		  Label: 'Rel Y'
+		  Range: -1 - -1
+		  Resolution: 0 units/m
+		  Mode: relative
+'Xvfb keyboard' (7)
+ - is a slave keyboard
+ - current pairing/attachment: 3
+		Class originated from: 7
+		Keycodes supported: 248
+
+Device info end.

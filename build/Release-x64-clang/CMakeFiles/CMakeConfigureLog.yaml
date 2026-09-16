@@ -1,0 +1,2299 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      The system is: Linux - 6.8.0-1064-azure - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GNWbSW"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GNWbSW"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GNWbSW'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_d61b7
+        [1/2] /usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GNWbSW -v -fcoverage-compilation-dir=/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GNWbSW -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-18/lib/clang/18/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        [2/2] : && /usr/bin/clang  -v CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o -o cmTC_d61b7   && :
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d61b7 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-18/lib/clang/18/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-18/lib/clang/18/include] ==> [/usr/lib/llvm-18/lib/clang/18/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-18/lib/clang/18/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GNWbSW']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_d61b7]
+        ignore line: [[1/2] /usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GNWbSW -v -fcoverage-compilation-dir=/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GNWbSW -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/bin/clang  -v CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o -o cmTC_d61b7   && :]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d61b7 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_d61b7] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/llvm-18/bin/../lib] ==> dir [/usr/lib/llvm-18/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_d61b7.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-18/bin/../lib] ==> [/usr/lib/llvm-18/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-18/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GKQinM"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GKQinM"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GKQinM'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_c4271
+        [1/2] /usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GKQinM -v -fcoverage-compilation-dir=/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GKQinM -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward
+         /usr/lib/llvm-18/lib/clang/18/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        [2/2] : && /usr/bin/clang++  -v CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c4271   && :
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c4271 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward]
+          add: [/usr/lib/llvm-18/lib/clang/18/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/llvm-18/lib/clang/18/include] ==> [/usr/lib/llvm-18/lib/clang/18/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/llvm-18/lib/clang/18/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GKQinM']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_c4271]
+        ignore line: [[1/2] /usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GKQinM -v -fcoverage-compilation-dir=/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GKQinM -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward]
+        ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/bin/clang++  -v CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c4271   && :]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c4271 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-18/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_c4271] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/llvm-18/bin/../lib] ==> dir [/usr/lib/llvm-18/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_c4271.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-18/bin/../lib] ==> [/usr/lib/llvm-18/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-18/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:9 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      Ubuntu clang version 18.1.3 (1ubuntu1)
+      Target: x86_64-pc-linux-gnu
+      Thread model: posix
+      InstalledDir: /usr/bin
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:9 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      Ubuntu clang version 18.1.3 (1ubuntu1)
+      Target: x86_64-pc-linux-gnu
+      Thread model: posix
+      InstalledDir: /usr/bin
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:9 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" matched "(clang version)":
+      Ubuntu clang version 18.1.3 (1ubuntu1)
+      Target: x86_64-pc-linux-gnu
+      Thread model: posix
+      InstalledDir: /usr/bin
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:194 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test HAVE_STDC_FORMAT_MACROS"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fmudiM"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fmudiM"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: "  -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++"
+      CMAKE_CXX_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_STDC_FORMAT_MACROS"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fmudiM'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ebf81
+        [1/2] /usr/bin/clang++ -DHAVE_STDC_FORMAT_MACROS  -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++ -MD -MT CMakeFiles/cmTC_ebf81.dir/src.cxx.o -MF CMakeFiles/cmTC_ebf81.dir/src.cxx.o.d -o CMakeFiles/cmTC_ebf81.dir/src.cxx.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fmudiM/src.cxx
+        [2/2] : && /usr/bin/clang++ -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++ -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_ebf81.dir/src.cxx.o -o cmTC_ebf81   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:208 (check_symbol_exists)"
+    checks:
+      - "Looking for posix_memalign"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-zMbFVA"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-zMbFVA"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_POSIX_MEMALIGN_DEFAULT"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-zMbFVA'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_a59b6
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_a59b6.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_a59b6.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_a59b6.dir/CheckSymbolExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-zMbFVA/CheckSymbolExists.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_a59b6.dir/CheckSymbolExists.c.o -o cmTC_a59b6   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:223 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test HAVE___RESTRICT"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-W1yJPE"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-W1yJPE"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: "  -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++"
+      CMAKE_CXX_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE___RESTRICT"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-W1yJPE'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_8ab20
+        [1/2] /usr/bin/clang++ -DHAVE___RESTRICT  -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++ -MD -MT CMakeFiles/cmTC_8ab20.dir/src.cxx.o -MF CMakeFiles/cmTC_8ab20.dir/src.cxx.o.d -o CMakeFiles/cmTC_8ab20.dir/src.cxx.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-W1yJPE/src.cxx
+        [2/2] : && /usr/bin/clang++ -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++ -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_8ab20.dir/src.cxx.o -o cmTC_8ab20   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:234 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test HAVE_LIBATOMIC"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-r9xBup"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-r9xBup"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: "  -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++"
+      CMAKE_CXX_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_LIBATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-r9xBup'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_fcfe7
+        [1/2] /usr/bin/clang++ -DHAVE_LIBATOMIC  -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++ -MD -MT CMakeFiles/cmTC_fcfe7.dir/src.cxx.o -MF CMakeFiles/cmTC_fcfe7.dir/src.cxx.o.d -o CMakeFiles/cmTC_fcfe7.dir/src.cxx.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-r9xBup/src.cxx
+        [2/2] : && /usr/bin/clang++ -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++ -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_fcfe7.dir/src.cxx.o -o cmTC_fcfe7  -latomic && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:288 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_WNO_CXX20_ATTR_EXT"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-74ldGN"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-74ldGN"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: "  -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++"
+      CMAKE_CXX_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_WNO_CXX20_ATTR_EXT"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-74ldGN'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_526b2
+        [1/2] /usr/bin/clang++ -DHAVE_WNO_CXX20_ATTR_EXT  -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++    -Wno-c++20-attribute-extensions -MD -MT CMakeFiles/cmTC_526b2.dir/src.cxx.o -MF CMakeFiles/cmTC_526b2.dir/src.cxx.o.d -o CMakeFiles/cmTC_526b2.dir/src.cxx.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-74ldGN/src.cxx
+        [2/2] : && /usr/bin/clang++ -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++ -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_526b2.dir/src.cxx.o -o cmTC_526b2  -latomic && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:298 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_WNO_INTERFERENCE_SIZE"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-Ycb3wm"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-Ycb3wm"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: "  -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++"
+      CMAKE_CXX_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_WNO_INTERFERENCE_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-Ycb3wm'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ce37b
+        [1/2] /usr/bin/clang++ -DHAVE_WNO_INTERFERENCE_SIZE  -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++    -Wno-interference-size -MD -MT CMakeFiles/cmTC_ce37b.dir/src.cxx.o -MF CMakeFiles/cmTC_ce37b.dir/src.cxx.o.d -o CMakeFiles/cmTC_ce37b.dir/src.cxx.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-Ycb3wm/src.cxx
+        [2/2] : && /usr/bin/clang++ -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++ -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_ce37b.dir/src.cxx.o -o cmTC_ce37b  -latomic && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:315 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_FNO_MATH_ERRNO"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KornMB"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KornMB"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_FNO_MATH_ERRNO"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KornMB'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_3cf44
+        [1/2] /usr/bin/clang -DHAVE_FNO_MATH_ERRNO  -m64 -ffp-model=strict    -fno-math-errno -MD -MT CMakeFiles/cmTC_3cf44.dir/src.c.o -MF CMakeFiles/cmTC_3cf44.dir/src.c.o.d -o CMakeFiles/cmTC_3cf44.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KornMB/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_3cf44.dir/src.c.o -o cmTC_3cf44  -latomic && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:401 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_MSSE2_SWITCH"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-cP9MyH"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-cP9MyH"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_MSSE2_SWITCH"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-cP9MyH'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_63931
+        [1/2] /usr/bin/clang -DHAVE_MSSE2_SWITCH  -m64 -ffp-model=strict  -Werror   -msse2 -MD -MT CMakeFiles/cmTC_63931.dir/src.c.o -MF CMakeFiles/cmTC_63931.dir/src.c.o.d -o CMakeFiles/cmTC_63931.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-cP9MyH/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict  -Werror -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_63931.dir/src.c.o -o cmTC_63931  -latomic && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:409 (check_include_file)"
+    checks:
+      - "Looking for xmmintrin.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-zqaBWk"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-zqaBWk"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_XMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-zqaBWk'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4097d
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_4097d.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_4097d.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_4097d.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-zqaBWk/CheckIncludeFile.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_4097d.dir/CheckIncludeFile.c.o -o cmTC_4097d  -latomic && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:410 (check_include_file)"
+    checks:
+      - "Looking for emmintrin.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-dQJGR0"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-dQJGR0"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_EMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-dQJGR0'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_28cc7
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_28cc7.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_28cc7.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_28cc7.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-dQJGR0/CheckIncludeFile.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_28cc7.dir/CheckIncludeFile.c.o -o cmTC_28cc7  -latomic && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:411 (check_include_file)"
+    checks:
+      - "Looking for pmmintrin.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GClcwY"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GClcwY"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_PMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GClcwY'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b3bab
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_b3bab.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_b3bab.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_b3bab.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GClcwY/CheckIncludeFile.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_b3bab.dir/CheckIncludeFile.c.o -o cmTC_b3bab  -latomic && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:412 (check_include_file)"
+    checks:
+      - "Looking for smmintrin.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KvHDMT"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KvHDMT"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_SMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KvHDMT'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_eab8a
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_eab8a.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_eab8a.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_eab8a.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KvHDMT/CheckIncludeFile.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_eab8a.dir/CheckIncludeFile.c.o -o cmTC_eab8a  -latomic && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:413 (check_include_file)"
+    checks:
+      - "Looking for arm_neon.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-oRsBY6"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-oRsBY6"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_ARM_NEON_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-oRsBY6'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_257c5
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_257c5.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_257c5.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_257c5.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-oRsBY6/CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_257c5.dir/CheckIncludeFile.c.o 
+        /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_257c5.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_257c5.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_257c5.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-oRsBY6/CheckIncludeFile.c
+        In file included from /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-oRsBY6/CheckIncludeFile.c:1:
+        /usr/lib/llvm-18/lib/clang/18/include/arm_neon.h:28:2: error: "NEON intrinsics not available with the soft-float ABI. Please use -mfloat-abi=softfp or -mfloat-abi=hard"
+           28 | #error "NEON intrinsics not available with the soft-float ABI. Please use -mfloat-abi=softfp or -mfloat-abi=hard"
+              |  ^
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:513 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_SSE_INTRINSICS"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GqwrDp"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GqwrDp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_SSE_INTRINSICS"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GqwrDp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_e7afc
+        [1/2] /usr/bin/clang -DHAVE_SSE_INTRINSICS  -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_e7afc.dir/src.c.o -MF CMakeFiles/cmTC_e7afc.dir/src.c.o.d -o CMakeFiles/cmTC_e7afc.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-GqwrDp/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_e7afc.dir/src.c.o -o cmTC_e7afc  -latomic && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:520 (check_include_file)"
+    checks:
+      - "Looking for malloc.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-33qnLL"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-33qnLL"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_MALLOC_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-33qnLL'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_646cb
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_646cb.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_646cb.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_646cb.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-33qnLL/CheckIncludeFile.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_646cb.dir/CheckIncludeFile.c.o -o cmTC_646cb  -latomic && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:521 (check_include_file)"
+    checks:
+      - "Looking for cpuid.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-G8LMCr"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-G8LMCr"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_CPUID_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-G8LMCr'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_502eb
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_502eb.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_502eb.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_502eb.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-G8LMCr/CheckIncludeFile.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_502eb.dir/CheckIncludeFile.c.o -o cmTC_502eb  -latomic && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:522 (check_include_file)"
+    checks:
+      - "Looking for intrin.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-yGueXm"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-yGueXm"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_INTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-yGueXm'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_813b6
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_813b6.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_813b6.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_813b6.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-yGueXm/CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_813b6.dir/CheckIncludeFile.c.o 
+        /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_813b6.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_813b6.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_813b6.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-yGueXm/CheckIncludeFile.c
+        In file included from /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-yGueXm/CheckIncludeFile.c:1:
+        /usr/lib/llvm-18/lib/clang/18/include/intrin.h:12:15: fatal error: 'intrin.h' file not found
+           12 | #include_next <intrin.h>
+              |               ^~~~~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:523 (check_include_file)"
+    checks:
+      - "Looking for guiddef.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-qOoiBR"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-qOoiBR"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_GUIDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-qOoiBR'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_3d238
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_3d238.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_3d238.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_3d238.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-qOoiBR/CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_3d238.dir/CheckIncludeFile.c.o 
+        /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_3d238.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_3d238.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_3d238.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-qOoiBR/CheckIncludeFile.c
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-qOoiBR/CheckIncludeFile.c:1:10: fatal error: 'guiddef.h' file not found
+            1 | #include <guiddef.h>
+              |          ^~~~~~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:525 (check_include_file)"
+    checks:
+      - "Looking for initguid.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-UcjC6Y"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-UcjC6Y"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_INITGUID_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-UcjC6Y'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b4505
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_b4505.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_b4505.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_b4505.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-UcjC6Y/CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_b4505.dir/CheckIncludeFile.c.o 
+        /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_b4505.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_b4505.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_b4505.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-UcjC6Y/CheckIncludeFile.c
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-UcjC6Y/CheckIncludeFile.c:1:10: fatal error: 'initguid.h' file not found
+            1 | #include <initguid.h>
+              |          ^~~~~~~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:530 (check_library_exists)"
+    checks:
+      - "Looking for pow in m"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-pfP81H"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-pfP81H"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_LIBM"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-pfP81H'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_53278
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=pow -MD -MT CMakeFiles/cmTC_53278.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_53278.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_53278.dir/CheckFunctionExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-pfP81H/CheckFunctionExists.c
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-pfP81H/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'pow' [-Wincompatible-library-redeclaration]
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS pow
+              |                               ^
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-pfP81H/CheckFunctionExists.c:7:3: note: 'pow' is a builtin with type 'double (double, double)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS pow
+              |                               ^
+        1 warning generated.
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=pow -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_53278.dir/CheckFunctionExists.c.o -o cmTC_53278  -lm  -latomic && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:539 (check_library_exists)"
+    checks:
+      - "Looking for clock_gettime in rt"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rJnBcY"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rJnBcY"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_LIBRT"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rJnBcY'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_41e43
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=clock_gettime -MD -MT CMakeFiles/cmTC_41e43.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_41e43.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_41e43.dir/CheckFunctionExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rJnBcY/CheckFunctionExists.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=clock_gettime -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_41e43.dir/CheckFunctionExists.c.o -o cmTC_41e43  -lrt  -latomic  -lm && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:546 (check_include_file)"
+    checks:
+      - "Looking for dlfcn.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-nEWGjl"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-nEWGjl"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_DLFCN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-nEWGjl'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b8b75
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_b8b75.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_b8b75.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_b8b75.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-nEWGjl/CheckIncludeFile.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_b8b75.dir/CheckIncludeFile.c.o -o cmTC_b8b75  -latomic  -lm && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:547 (check_library_exists)"
+    checks:
+      - "Looking for dlopen in dl"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fvIZGa"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fvIZGa"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_LIBDL"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fvIZGa'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_35f3b
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=dlopen -MD -MT CMakeFiles/cmTC_35f3b.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_35f3b.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_35f3b.dir/CheckFunctionExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fvIZGa/CheckFunctionExists.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=dlopen -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_35f3b.dir/CheckFunctionExists.c.o -o cmTC_35f3b  -ldl  -latomic  -lm && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:556 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_GCC_GET_CPUID"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-v5djD1"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-v5djD1"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_GCC_GET_CPUID"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-v5djD1'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_48efb
+        [1/2] /usr/bin/clang -DHAVE_GCC_GET_CPUID  -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_48efb.dir/src.c.o -MF CMakeFiles/cmTC_48efb.dir/src.c.o.d -o CMakeFiles/cmTC_48efb.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-v5djD1/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_48efb.dir/src.c.o -o cmTC_48efb  -latomic  -lm  -ldl && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:573 (check_symbol_exists)"
+    checks:
+      - "Looking for proc_pidpath"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-Ol45Jy"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-Ol45Jy"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_PROC_PIDPATH"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-Ol45Jy'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_27a0b
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_27a0b.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_27a0b.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_27a0b.dir/CheckSymbolExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-Ol45Jy/CheckSymbolExists.c
+        FAILED: CMakeFiles/cmTC_27a0b.dir/CheckSymbolExists.c.o 
+        /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_27a0b.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_27a0b.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_27a0b.dir/CheckSymbolExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-Ol45Jy/CheckSymbolExists.c
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-Ol45Jy/CheckSymbolExists.c:2:10: fatal error: 'libproc.h' file not found
+            2 | #include <libproc.h>
+              |          ^~~~~~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:578 (check_include_file)"
+    checks:
+      - "Looking for pthread.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-8atdCP"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-8atdCP"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_PTHREAD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-8atdCP'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b1396
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_b1396.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_b1396.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_b1396.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-8atdCP/CheckIncludeFile.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_b1396.dir/CheckIncludeFile.c.o -o cmTC_b1396  -latomic  -lm  -ldl && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:583 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_PTHREAD"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-eVTe76"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-eVTe76"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-eVTe76'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_d6232
+        [1/2] /usr/bin/clang -DHAVE_PTHREAD  -m64 -ffp-model=strict    -pthread -MD -MT CMakeFiles/cmTC_d6232.dir/src.c.o -MF CMakeFiles/cmTC_d6232.dir/src.c.o.d -o CMakeFiles/cmTC_d6232.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-eVTe76/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_d6232.dir/src.c.o -o cmTC_d6232  -latomic  -lm  -ldl && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:590 (check_symbol_exists)"
+    checks:
+      - "Looking for pthread_setschedparam"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KPmAR4"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KPmAR4"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_PTHREAD_SETSCHEDPARAM"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KPmAR4'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_c0d23
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict  -pthread -MD -MT CMakeFiles/cmTC_c0d23.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_c0d23.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_c0d23.dir/CheckSymbolExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KPmAR4/CheckSymbolExists.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict  -pthread -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_c0d23.dir/CheckSymbolExists.c.o -o cmTC_c0d23  -latomic  -lm  -ldl && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:593 (check_include_files)"
+    checks:
+      - "Looking for include files pthread.h, pthread_np.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-luNQbK"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-luNQbK"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_PTHREAD_NP_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-luNQbK'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_c1595
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict  -pthread -MD -MT CMakeFiles/cmTC_c1595.dir/HAVE_PTHREAD_NP_H.c.o -MF CMakeFiles/cmTC_c1595.dir/HAVE_PTHREAD_NP_H.c.o.d -o CMakeFiles/cmTC_c1595.dir/HAVE_PTHREAD_NP_H.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-luNQbK/HAVE_PTHREAD_NP_H.c
+        FAILED: CMakeFiles/cmTC_c1595.dir/HAVE_PTHREAD_NP_H.c.o 
+        /usr/bin/clang   -m64 -ffp-model=strict  -pthread -MD -MT CMakeFiles/cmTC_c1595.dir/HAVE_PTHREAD_NP_H.c.o -MF CMakeFiles/cmTC_c1595.dir/HAVE_PTHREAD_NP_H.c.o.d -o CMakeFiles/cmTC_c1595.dir/HAVE_PTHREAD_NP_H.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-luNQbK/HAVE_PTHREAD_NP_H.c
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-luNQbK/HAVE_PTHREAD_NP_H.c:3:10: fatal error: 'pthread_np.h' file not found
+            3 | #include <pthread_np.h>
+              |          ^~~~~~~~~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:600 (check_symbol_exists)"
+    checks:
+      - "Looking for pthread_setname_np"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-TgdaiG"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-TgdaiG"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_PTHREAD_SETNAME_NP"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-TgdaiG'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_df2a3
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict  -pthread -MD -MT CMakeFiles/cmTC_df2a3.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_df2a3.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_df2a3.dir/CheckSymbolExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-TgdaiG/CheckSymbolExists.c
+        FAILED: CMakeFiles/cmTC_df2a3.dir/CheckSymbolExists.c.o 
+        /usr/bin/clang   -m64 -ffp-model=strict  -pthread -MD -MT CMakeFiles/cmTC_df2a3.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_df2a3.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_df2a3.dir/CheckSymbolExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-TgdaiG/CheckSymbolExists.c
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-TgdaiG/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'pthread_setname_np'
+            8 |   return ((int*)(&pthread_setname_np))[argc];
+              |                   ^
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "src/3rdparty/openal-soft/CMakeLists.txt:602 (check_symbol_exists)"
+    checks:
+      - "Looking for pthread_set_name_np"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-4DcZDp"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-4DcZDp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_PTHREAD_SET_NAME_NP"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-4DcZDp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_780d0
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict  -pthread -MD -MT CMakeFiles/cmTC_780d0.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_780d0.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_780d0.dir/CheckSymbolExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-4DcZDp/CheckSymbolExists.c
+        FAILED: CMakeFiles/cmTC_780d0.dir/CheckSymbolExists.c.o 
+        /usr/bin/clang   -m64 -ffp-model=strict  -pthread -MD -MT CMakeFiles/cmTC_780d0.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_780d0.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_780d0.dir/CheckSymbolExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-4DcZDp/CheckSymbolExists.c
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-4DcZDp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'pthread_set_name_np'
+            8 |   return ((int*)(&pthread_set_name_np))[argc];
+              |                   ^
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "src/3rdparty/streflop/CMakeLists.txt:83 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test SSE2_SUPPORTED"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-V1mqGi"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-V1mqGi"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: "  -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++ -Werror"
+      CMAKE_CXX_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake"
+    buildResult:
+      variable: "SSE2_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-V1mqGi'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_2c3da
+        [1/2] /usr/bin/clang++ -DSSE2_SUPPORTED  -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++ -Werror    -msse -msse2 -MD -MT CMakeFiles/cmTC_2c3da.dir/src.cxx.o -MF CMakeFiles/cmTC_2c3da.dir/src.cxx.o.d -o CMakeFiles/cmTC_2c3da.dir/src.cxx.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-V1mqGi/src.cxx
+        [2/2] : && /usr/bin/clang++ -m64 -ffp-model=strict -Xclang -fno-threadsafe-statics -Wall -Wextra -Wcast-align -Wover-aligned -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-deprecated-literal-operator -Wno-nontrivial-memcall  -fcolor-diagnostics -Wno-error=unused-command-line-argument -Wno-error=missing-braces -Wno-deprecated-enum-enum-conversion -ftemplate-backtrace-limit=0 -std=c++20 -stdlib=libc++ -Werror -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_2c3da.dir/src.cxx.o -o cmTC_2c3da   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/freetype2/CMakeLists.txt:255 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rkiemI"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rkiemI"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/freetype2/builds/cmake"
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rkiemI'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_943a5
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_943a5.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_943a5.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_943a5.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rkiemI/CheckIncludeFile.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_943a5.dir/CheckIncludeFile.c.o -o cmTC_943a5   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/freetype2/CMakeLists.txt:256 (check_include_file)"
+    checks:
+      - "Looking for fcntl.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-AgTJYi"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-AgTJYi"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/freetype2/builds/cmake"
+    buildResult:
+      variable: "HAVE_FCNTL_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-AgTJYi'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_865d0
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -MD -MT CMakeFiles/cmTC_865d0.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_865d0.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_865d0.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-AgTJYi/CheckIncludeFile.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_865d0.dir/CheckIncludeFile.c.o -o cmTC_865d0   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:682 (check_library_exists)"
+      - "CMakeLists.txt:2217 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-eBFMyX"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-eBFMyX"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-eBFMyX'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_582b6
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=XOpenDisplay -MD -MT CMakeFiles/cmTC_582b6.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_582b6.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_582b6.dir/CheckFunctionExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-eBFMyX/CheckFunctionExists.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=XOpenDisplay -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_582b6.dir/CheckFunctionExists.c.o -o cmTC_582b6  /usr/lib/x86_64-linux-gnu/libX11.so  /usr/lib/x86_64-linux-gnu/libXext.so && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:697 (check_function_exists)"
+      - "CMakeLists.txt:2217 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-DCfmKr"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-DCfmKr"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-DCfmKr'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_e1234
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=gethostbyname -MD -MT CMakeFiles/cmTC_e1234.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_e1234.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_e1234.dir/CheckFunctionExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-DCfmKr/CheckFunctionExists.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=gethostbyname -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_e1234.dir/CheckFunctionExists.c.o -o cmTC_e1234   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:711 (check_function_exists)"
+      - "CMakeLists.txt:2217 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rGk1PB"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rGk1PB"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rGk1PB'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_34047
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=connect -MD -MT CMakeFiles/cmTC_34047.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_34047.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_34047.dir/CheckFunctionExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rGk1PB/CheckFunctionExists.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=connect -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_34047.dir/CheckFunctionExists.c.o -o cmTC_34047   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:720 (check_function_exists)"
+      - "CMakeLists.txt:2217 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-dDzm1E"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-dDzm1E"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-dDzm1E'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_737c7
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=remove -MD -MT CMakeFiles/cmTC_737c7.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_737c7.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_737c7.dir/CheckFunctionExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-dDzm1E/CheckFunctionExists.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=remove -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_737c7.dir/CheckFunctionExists.c.o -o cmTC_737c7   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:729 (check_function_exists)"
+      - "CMakeLists.txt:2217 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-FzJ4GL"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-FzJ4GL"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-FzJ4GL'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_51c37
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=shmat -MD -MT CMakeFiles/cmTC_51c37.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_51c37.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_51c37.dir/CheckFunctionExists.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-FzJ4GL/CheckFunctionExists.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -DCHECK_FUNCTION_EXISTS=shmat -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_51c37.dir/CheckFunctionExists.c.o -o cmTC_51c37   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "src/3rdparty/libdatachannel/CMakeLists.txt:301 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-jauUn6"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-jauUn6"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-jauUn6'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4ccf1
+        [1/2] /usr/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD  -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_4ccf1.dir/src.c.o -MF CMakeFiles/cmTC_4ccf1.dir/src.c.o.d -o CMakeFiles/cmTC_4ccf1.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-jauUn6/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_4ccf1.dir/src.c.o -o cmTC_4ccf1   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:93 (check_include_files)"
+    checks:
+      - "Looking for include file sys/queue.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-hedZZK"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-hedZZK"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "have_sys_queue_h"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-hedZZK'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_9673d
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_9673d.dir/have_sys_queue_h.c.o -MF CMakeFiles/cmTC_9673d.dir/have_sys_queue_h.c.o.d -o CMakeFiles/cmTC_9673d.dir/have_sys_queue_h.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-hedZZK/have_sys_queue_h.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_9673d.dir/have_sys_queue_h.c.o -o cmTC_9673d   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:98 (check_include_files)"
+    checks:
+      - "Looking for include files sys/socket.h, linux/if_addr.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-xdGF3e"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-xdGF3e"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "have_linux_if_addr_h"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-xdGF3e'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_22b12
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_22b12.dir/have_linux_if_addr_h.c.o -MF CMakeFiles/cmTC_22b12.dir/have_linux_if_addr_h.c.o.d -o CMakeFiles/cmTC_22b12.dir/have_linux_if_addr_h.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-xdGF3e/have_linux_if_addr_h.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_22b12.dir/have_linux_if_addr_h.c.o -o cmTC_22b12   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:103 (check_include_files)"
+    checks:
+      - "Looking for include files sys/socket.h, linux/rtnetlink.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-23pPh6"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-23pPh6"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "have_linux_rtnetlink_h"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-23pPh6'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_02a63
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_02a63.dir/have_linux_rtnetlink_h.c.o -MF CMakeFiles/cmTC_02a63.dir/have_linux_rtnetlink_h.c.o.d -o CMakeFiles/cmTC_02a63.dir/have_linux_rtnetlink_h.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-23pPh6/have_linux_rtnetlink_h.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_02a63.dir/have_linux_rtnetlink_h.c.o -o cmTC_02a63   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:108 (check_include_files)"
+    checks:
+      - "Looking for 4 include files sys/types.h, ..., netinet/ip_icmp.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-r8Lpc4"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-r8Lpc4"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "have_netinet_ip_icmp_h"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-r8Lpc4'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_55469
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_55469.dir/have_netinet_ip_icmp_h.c.o -MF CMakeFiles/cmTC_55469.dir/have_netinet_ip_icmp_h.c.o.d -o CMakeFiles/cmTC_55469.dir/have_netinet_ip_icmp_h.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-r8Lpc4/have_netinet_ip_icmp_h.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_55469.dir/have_netinet_ip_icmp_h.c.o -o cmTC_55469   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:113 (check_include_files)"
+    checks:
+      - "Looking for 3 include files sys/types.h, ..., net/route.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-m4vYf3"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-m4vYf3"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "have_net_route_h"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-m4vYf3'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_1b7a9
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_1b7a9.dir/have_net_route_h.c.o -MF CMakeFiles/cmTC_1b7a9.dir/have_net_route_h.c.o.d -o CMakeFiles/cmTC_1b7a9.dir/have_net_route_h.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-m4vYf3/have_net_route_h.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_1b7a9.dir/have_net_route_h.c.o -o cmTC_1b7a9   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:118 (check_include_files)"
+    checks:
+      - "Looking for include file stdatomic.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rAvtXB"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rAvtXB"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "have_stdatomic_h"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rAvtXB'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_3ceaf
+        [1/2] /usr/bin/clang   -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_3ceaf.dir/have_stdatomic_h.c.o -MF CMakeFiles/cmTC_3ceaf.dir/have_stdatomic_h.c.o.d -o CMakeFiles/cmTC_3ceaf.dir/have_stdatomic_h.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-rAvtXB/have_stdatomic_h.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_3ceaf.dir/have_stdatomic_h.c.o -o cmTC_3ceaf   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:130 (check_include_file)"
+    checks:
+      - "Looking for usrsctp.h"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-0QGWy9"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-0QGWy9"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "have_usrsctp_h"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-0QGWy9'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b5dd4
+        [1/2] /usr/bin/clang  -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_b5dd4.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_b5dd4.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_b5dd4.dir/CheckIncludeFile.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-0QGWy9/CheckIncludeFile.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_b5dd4.dir/CheckIncludeFile.c.o -o cmTC_b5dd4   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckStructHasMember.cmake:77 (CHECK_SOURCE_COMPILES)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:135 (check_struct_has_member)"
+    checks:
+      - "Performing Test have_sa_len"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-i0WuJL"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-i0WuJL"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "have_sa_len"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-i0WuJL'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ad361
+        [1/2] /usr/bin/clang -Dhave_sa_len -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_ad361.dir/src.c.o -MF CMakeFiles/cmTC_ad361.dir/src.c.o.d -o CMakeFiles/cmTC_ad361.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-i0WuJL/src.c
+        FAILED: CMakeFiles/cmTC_ad361.dir/src.c.o 
+        /usr/bin/clang -Dhave_sa_len -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_ad361.dir/src.c.o -MF CMakeFiles/cmTC_ad361.dir/src.c.o.d -o CMakeFiles/cmTC_ad361.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-i0WuJL/src.c
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-i0WuJL/src.c:7:40: error: no member named 'sa_len' in 'struct sockaddr'
+            7 |   (void)sizeof(((struct sockaddr *)0)->sa_len);
+              |                ~~~~~~~~~~~~~~~~~~~~~~  ^
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckStructHasMember.cmake:77 (CHECK_SOURCE_COMPILES)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:141 (check_struct_has_member)"
+    checks:
+      - "Performing Test have_sin_len"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-hnknXA"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-hnknXA"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "have_sin_len"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-hnknXA'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_90133
+        [1/2] /usr/bin/clang -Dhave_sin_len -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_90133.dir/src.c.o -MF CMakeFiles/cmTC_90133.dir/src.c.o.d -o CMakeFiles/cmTC_90133.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-hnknXA/src.c
+        FAILED: CMakeFiles/cmTC_90133.dir/src.c.o 
+        /usr/bin/clang -Dhave_sin_len -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_90133.dir/src.c.o -MF CMakeFiles/cmTC_90133.dir/src.c.o.d -o CMakeFiles/cmTC_90133.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-hnknXA/src.c
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-hnknXA/src.c:7:43: error: no member named 'sin_len' in 'struct sockaddr_in'
+            7 |   (void)sizeof(((struct sockaddr_in *)0)->sin_len);
+              |                ~~~~~~~~~~~~~~~~~~~~~~~~~  ^
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckStructHasMember.cmake:77 (CHECK_SOURCE_COMPILES)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:147 (check_struct_has_member)"
+    checks:
+      - "Performing Test have_sin6_len"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fNu8gv"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fNu8gv"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "have_sin6_len"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fNu8gv'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_fe4a1
+        [1/2] /usr/bin/clang -Dhave_sin6_len -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_fe4a1.dir/src.c.o -MF CMakeFiles/cmTC_fe4a1.dir/src.c.o.d -o CMakeFiles/cmTC_fe4a1.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fNu8gv/src.c
+        FAILED: CMakeFiles/cmTC_fe4a1.dir/src.c.o 
+        /usr/bin/clang -Dhave_sin6_len -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_fe4a1.dir/src.c.o -MF CMakeFiles/cmTC_fe4a1.dir/src.c.o.d -o CMakeFiles/cmTC_fe4a1.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fNu8gv/src.c
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-fNu8gv/src.c:7:44: error: no member named 'sin6_len' in 'struct sockaddr_in6'
+            7 |   (void)sizeof(((struct sockaddr_in6 *)0)->sin6_len);
+              |                ~~~~~~~~~~~~~~~~~~~~~~~~~~  ^
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckStructHasMember.cmake:77 (CHECK_SOURCE_COMPILES)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:153 (check_struct_has_member)"
+    checks:
+      - "Performing Test have_sconn_len"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-iSYohi"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-iSYohi"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "have_sconn_len"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-iSYohi'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_e5f74
+        [1/2] /usr/bin/clang -Dhave_sconn_len -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_e5f74.dir/src.c.o -MF CMakeFiles/cmTC_e5f74.dir/src.c.o.d -o CMakeFiles/cmTC_e5f74.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-iSYohi/src.c
+        FAILED: CMakeFiles/cmTC_e5f74.dir/src.c.o 
+        /usr/bin/clang -Dhave_sconn_len -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict  -fPIE -MD -MT CMakeFiles/cmTC_e5f74.dir/src.c.o -MF CMakeFiles/cmTC_e5f74.dir/src.c.o.d -o CMakeFiles/cmTC_e5f74.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-iSYohi/src.c
+        /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-iSYohi/src.c:6:45: error: no member named 'sconn_len' in 'struct sockaddr_conn'
+            6 |   (void)sizeof(((struct sockaddr_conn *)0)->sconn_len);
+              |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~  ^
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:205 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test has_wfloat_equal"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-uDmBRP"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-uDmBRP"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "has_wfloat_equal"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-uDmBRP'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_dee74
+        [1/2] /usr/bin/clang -Dhas_wfloat_equal -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra  -fPIE   -Wfloat-equal -MD -MT CMakeFiles/cmTC_dee74.dir/src.c.o -MF CMakeFiles/cmTC_dee74.dir/src.c.o.d -o CMakeFiles/cmTC_dee74.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-uDmBRP/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_dee74.dir/src.c.o -o cmTC_dee74   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:210 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test has_wshadow"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-BKRSfr"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-BKRSfr"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "has_wshadow"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-BKRSfr'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_096ea
+        [1/2] /usr/bin/clang -Dhas_wshadow -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal  -fPIE   -Wshadow -MD -MT CMakeFiles/cmTC_096ea.dir/src.c.o -MF CMakeFiles/cmTC_096ea.dir/src.c.o.d -o CMakeFiles/cmTC_096ea.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-BKRSfr/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_096ea.dir/src.c.o -o cmTC_096ea   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:215 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test has_wpointer_aritih"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-bHT2TJ"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-bHT2TJ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "has_wpointer_aritih"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-bHT2TJ'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_8fc83
+        [1/2] /usr/bin/clang -Dhas_wpointer_aritih -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow  -fPIE   -Wpointer-arith -MD -MT CMakeFiles/cmTC_8fc83.dir/src.c.o -MF CMakeFiles/cmTC_8fc83.dir/src.c.o.d -o CMakeFiles/cmTC_8fc83.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-bHT2TJ/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_8fc83.dir/src.c.o -o cmTC_8fc83   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:220 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test has_wunreachable_code"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-RK6TCq"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-RK6TCq"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "has_wunreachable_code"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-RK6TCq'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_35b88
+        [1/2] /usr/bin/clang -Dhas_wunreachable_code -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith  -fPIE   -Wunreachable-code -MD -MT CMakeFiles/cmTC_35b88.dir/src.c.o -MF CMakeFiles/cmTC_35b88.dir/src.c.o.d -o CMakeFiles/cmTC_35b88.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-RK6TCq/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_35b88.dir/src.c.o -o cmTC_35b88   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:225 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test has_winit_self"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-7wHuPV"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-7wHuPV"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "has_winit_self"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-7wHuPV'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_8e67e
+        [1/2] /usr/bin/clang -Dhas_winit_self -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code  -fPIE   -Winit-self -MD -MT CMakeFiles/cmTC_8e67e.dir/src.c.o -MF CMakeFiles/cmTC_8e67e.dir/src.c.o.d -o CMakeFiles/cmTC_8e67e.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-7wHuPV/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_8e67e.dir/src.c.o -o cmTC_8e67e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:230 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test has_wno_unused_function"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-0WqDfu"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-0WqDfu"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "has_wno_unused_function"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-0WqDfu'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_2d440
+        [1/2] /usr/bin/clang -Dhas_wno_unused_function -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self  -fPIE   -Wno-unused-function -MD -MT CMakeFiles/cmTC_2d440.dir/src.c.o -MF CMakeFiles/cmTC_2d440.dir/src.c.o.d -o CMakeFiles/cmTC_2d440.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-0WqDfu/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_2d440.dir/src.c.o -o cmTC_2d440   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:235 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test has_wno_unused_parameter"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-VXq0jR"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-VXq0jR"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "has_wno_unused_parameter"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-VXq0jR'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_35b2b
+        [1/2] /usr/bin/clang -Dhas_wno_unused_parameter -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function  -fPIE   -Wno-unused-parameter -MD -MT CMakeFiles/cmTC_35b2b.dir/src.c.o -MF CMakeFiles/cmTC_35b2b.dir/src.c.o.d -o CMakeFiles/cmTC_35b2b.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-VXq0jR/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_35b2b.dir/src.c.o -o cmTC_35b2b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:240 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test has_wno_unreachable_code"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-gUVpyA"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-gUVpyA"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -Wno-unused-parameter"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "has_wno_unreachable_code"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-gUVpyA'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4f76c
+        [1/2] /usr/bin/clang -Dhas_wno_unreachable_code -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -Wno-unused-parameter  -fPIE   -Wno-unreachable-code -MD -MT CMakeFiles/cmTC_4f76c.dir/src.c.o -MF CMakeFiles/cmTC_4f76c.dir/src.c.o.d -o CMakeFiles/cmTC_4f76c.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-gUVpyA/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -Wno-unused-parameter -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_4f76c.dir/src.c.o -o cmTC_4f76c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/CMakeLists.txt:245 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test has_wstrict_prototypes"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-nYQvKg"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-nYQvKg"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -Wno-unused-parameter -Wno-unreachable-code"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "has_wstrict_prototypes"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-nYQvKg'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_0288f
+        [1/2] /usr/bin/clang -Dhas_wstrict_prototypes -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -Wno-unused-parameter -Wno-unreachable-code  -fPIE   -Wstrict-prototypes -MD -MT CMakeFiles/cmTC_0288f.dir/src.c.o -MF CMakeFiles/cmTC_0288f.dir/src.c.o.d -o CMakeFiles/cmTC_0288f.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-nYQvKg/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -Wno-unused-parameter -Wno-unreachable-code -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_0288f.dir/src.c.o -o cmTC_0288f   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib/CMakeLists.txt:72 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test has_wno_address_of_packed_member"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KiQMm9"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KiQMm9"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -Wno-unused-parameter -Wno-unreachable-code -Wstrict-prototypes"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "has_wno_address_of_packed_member"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KiQMm9'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_48f54
+        [1/2] /usr/bin/clang -Dhas_wno_address_of_packed_member -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -Wno-unused-parameter -Wno-unreachable-code -Wstrict-prototypes  -fPIE   -Wno-address-of-packed-member -MD -MT CMakeFiles/cmTC_48f54.dir/src.c.o -MF CMakeFiles/cmTC_48f54.dir/src.c.o.d -o CMakeFiles/cmTC_48f54.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-KiQMm9/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -Wno-unused-parameter -Wno-unreachable-code -Wstrict-prototypes -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_48f54.dir/src.c.o -o cmTC_48f54   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib/CMakeLists.txt:77 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test has_wno_deprecated_declarations"
+    directories:
+      source: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-dAbASc"
+      binary: "/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-dAbASc"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "  -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -Wno-unused-parameter -Wno-unreachable-code -Wstrict-prototypes -Wno-address-of-packed-member"
+      CMAKE_C_FLAGS_DEBUG: "  -Xclang -O0"
+      CMAKE_EXE_LINKER_FLAGS: " -pthread -unwindlib=libgcc -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/codespaces-blank/Hypersomnia/cmake;/workspaces/codespaces-blank/Hypersomnia/cmake/extra-cmake-modules/find-modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/cmake/Modules;/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "has_wno_deprecated_declarations"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-dAbASc'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ebf22
+        [1/2] /usr/bin/clang -Dhas_wno_deprecated_declarations -I/workspaces/codespaces-blank/Hypersomnia/src/3rdparty/libdatachannel/deps/usrsctp/usrsctplib -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -Wno-unused-parameter -Wno-unreachable-code -Wstrict-prototypes -Wno-address-of-packed-member  -fPIE   -Wno-deprecated-declarations -MD -MT CMakeFiles/cmTC_ebf22.dir/src.c.o -MF CMakeFiles/cmTC_ebf22.dir/src.c.o.d -o CMakeFiles/cmTC_ebf22.dir/src.c.o -c /workspaces/codespaces-blank/Hypersomnia/build/Release-x64-clang/CMakeFiles/CMakeScratch/TryCompile-dAbASc/src.c
+        [2/2] : && /usr/bin/clang -m64 -ffp-model=strict -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -Wno-unused-parameter -Wno-unreachable-code -Wstrict-prototypes -Wno-address-of-packed-member -pthread -unwindlib=libgcc -fuse-ld=lld CMakeFiles/cmTC_ebf22.dir/src.c.o -o cmTC_ebf22   && :
+        
+      exitCode: 0
+...
